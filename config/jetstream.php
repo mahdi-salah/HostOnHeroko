@@ -51,11 +51,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Profile Photo Disk
+    | Procfile Photo Disk
     |--------------------------------------------------------------------------
     |
     | This configuration value determines the default disk that will be used
-    | when storing Profile photos for your application's users. Typically
+    | when storing Procfile photos for your application's users. Typically
     | this will be the "public" disk but you may adjust this if needed.
     |
     */

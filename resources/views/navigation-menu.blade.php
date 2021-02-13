@@ -96,8 +96,8 @@
                                 {{ __('Manage Account') }}
                             </div>
 
-                            <x-jet-dropdown-link href="{{ route('Profile.show') }}">
-                                {{ __('Profile') }}
+                            <x-jet-dropdown-link href="{{ route('Procfile.show') }}">
+                                {{ __('Procfile') }}
                             </x-jet-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -160,8 +160,8 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
-                <x-jet-responsive-nav-link href="{{ route('Profile.show') }}" :active="request()->routeIs('profile.show')">
-                    {{ __('Profile') }}
+                <x-jet-responsive-nav-link href="{{ route('Procfile.show') }}" :active="request()->routeIs('profile.show')">
+                    {{ __('Procfile') }}
                 </x-jet-responsive-nav-link>
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())

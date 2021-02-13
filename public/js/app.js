@@ -13839,7 +13839,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * @returns {Function} Returns the new restricted function.
      * @example
      *
-     * var saves = ['Profile', 'settings'];
+     * var saves = ['Procfile', 'settings'];
      *
      * var done = _.after(saves.length, function() {
      *   console.log('done saving!');
