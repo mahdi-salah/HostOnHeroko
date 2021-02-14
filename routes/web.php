@@ -21,4 +21,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/test', [\App\Http\Controllers\TestController::class, 'list']);
+Route::get('/getData', [\App\Http\Controllers\getDataController::class, 'list']);
