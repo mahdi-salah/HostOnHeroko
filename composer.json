@@ -17,9 +17,7 @@
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.0",
-      "ext-json": "*"
-    },
-    "require-dev": {
+      "ext-json": "*",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
@@ -27,6 +25,9 @@
         "nascent-africa/jetstrap": "^2.1",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
+    },
+    "require-dev": {
+
     },
     "config": {
         "optimize-autoloader": true,
