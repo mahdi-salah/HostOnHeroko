@@ -27,7 +27,7 @@ $d_4046 = $points['d_4046'];
 $d_4047 = $points['d_4047'];
 $d_4048 = $points['d_4048'];
 $d_4049 = $points['d_4049'];
-$d_4032 = $points['d_4032'];
+//$d_4032 = $points['d_4032'];
 ?>
 
 
@@ -81,7 +81,7 @@ $d_4032 = $points['d_4032'];
             <tfoot>
             <tr class="myBgColor">
                 <td class="text-right pr-5 pt-2 pb-0"><h4>Total</h4></td>
-                <td class="text-left pl-5 pt-2 align-middle pb-0"><h4><?php echo $d_4032 ?></h4></td>
+                <td class="text-left pl-5 pt-2 align-middle pb-0"><h4><?php echo $d_4041 + $d_4042 + $d_4043 + $d_4044 + $d_4045 + $d_4046 + $d_4047 + $d_4048 + $d_4049 ?></h4></td>
             </tr>
             </tfoot>
         </table>
