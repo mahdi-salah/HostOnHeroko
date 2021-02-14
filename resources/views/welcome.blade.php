@@ -88,7 +88,7 @@ $d_4032 = $points['d_4032'];
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav-font-size">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#"><span class="my-link-hover">Home</span> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="/"><span class="my-link-hover">Home</span> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#"><span class="my-link-hover">Contact us</span></a>
