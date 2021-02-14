@@ -59,7 +59,7 @@ $d_4032 = $points['d_4032'];
 <div>
 
     <!--start Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
         <a class="navbar-brand text-white" href="#">
             <svg width="143" height="32" xmlns="http://www.w3.org/2000/svg">
                 <g>
