@@ -34,7 +34,7 @@ $d_4032 = $points['d_4032'];
 <div id="refresh">
     <section class="mt-4 container-fluid px-5 px-sm-0 w-sm-75 w-md-75 w-lg-50">
         <!--start table-->
-        <table class="table table-hover table-sm table-dark text-center rounded-lg overflow-hidden">
+        <table class="table shadow-lg table-hover table-sm table-dark text-center rounded-lg overflow-hidden">
             <thead>
             <tr class="myBgColor">
                 <th colspan="2" class="pt-2 pb-0"><h4>RMIG</h4></th>

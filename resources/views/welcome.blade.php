@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Laravel</title>
+    <title>RMIG Website</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+    <!--icon title-->
+
+    <link rel="icon" href="{!! asset('MOE.png') !!}"/>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,10 +28,13 @@
         .nav-font-size{
             font-size: 1rem;
         }
+        body{
+            background-color: #f2f2f2
+        }
     </style>
 
 </head>
-<body class="bg-light" >
+<body>
 
 
 <?php
