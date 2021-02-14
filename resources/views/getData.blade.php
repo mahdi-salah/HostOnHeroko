@@ -32,12 +32,12 @@ $d_4032 = $points['d_4032'];
 
 
 <div id="refresh">
-    <section class="mt-5 container-fluid px-5 px-sm-0 w-sm-75 w-md-75 w-lg-50">
+    <section class="mt-4 container-fluid px-5 px-sm-0 w-sm-75 w-md-75 w-lg-50">
         <!--start table-->
-        <table class="table table-hover table-dark text-center rounded-lg overflow-hidden">
+        <table class="table table-hover table-sm table-dark text-center rounded-lg overflow-hidden">
             <thead>
             <tr class="myBgColor">
-                <th colspan="2"><h4>RMIG</h4></th>
+                <th colspan="2" class="pt-2 pb-0"><h4>RMIG</h4></th>
             </tr>
             </thead>
             <tbody>
@@ -80,8 +80,8 @@ $d_4032 = $points['d_4032'];
             </tbody>
             <tfoot>
             <tr class="myBgColor">
-                <th class="text-right pr-5"><h4>Total</h4></th>
-                <th class="text-left pl-5"><h4><?php echo $d_4032 ?></h4></th>
+                <td class="text-right pr-5 pt-2 pb-0"><h4>Total</h4></td>
+                <td class="text-left pl-5 pt-2 align-middle pb-0"><h4><?php echo $d_4032 ?></h4></td>
             </tr>
             </tfoot>
         </table>
@@ -92,7 +92,8 @@ $d_4032 = $points['d_4032'];
 
 
 <style>
-    h6 {font-size:1.15rem;}
+    h6 {font-size:1.05rem;}
+    h4 {font-size:1.3rem;}
     .myBgColor{
         background-color: #2d3339;
     }

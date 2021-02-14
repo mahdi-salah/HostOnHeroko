@@ -8,6 +8,8 @@
     <title>Laravel</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,11 +18,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
-        body {
-            font-family: 'Nunito';
-        }
         .my-link-hover:hover{
             color: #999999;
+        }
+        .nav-font-size{
+            font-size: 1rem;
         }
     </style>
 
@@ -77,15 +79,15 @@ $d_4032 = $points['d_4032'];
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-font-size">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="#"><span class="my-link-hover">Home</span> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><span class="my-link-hover">Contact Us</span></a>
+                    <a class="nav-link text-white" href="#"><span class="my-link-hover">Contact us</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><span class="my-link-hover">About Us</span></a>
+                    <a class="nav-link text-white" href="#"><span class="my-link-hover">About us</span></a>
                 </li>
             </ul>
             <!--end Navbar-->
@@ -114,7 +116,6 @@ $d_4032 = $points['d_4032'];
     @include('getData')
 
 </div>
-
 
 </body>
 </html>
