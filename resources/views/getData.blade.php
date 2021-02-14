@@ -37,7 +37,7 @@ $d_4049 = $points['d_4049'];
         <table class="table shadow-lg table-hover table-sm table-dark text-center rounded-lg overflow-hidden">
             <thead>
             <tr class="myBgColor">
-                <th colspan="2" class="pt-2 pb-0"><h4>RMIG</h4></th>
+                <th colspan="2" class="pt-2 pb-0"><h4>Generation Units</h4></th>
             </tr>
             </thead>
             <tbody>
