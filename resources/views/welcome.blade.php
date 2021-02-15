@@ -100,21 +100,21 @@ $d_4032 = $points['d_4032'];
             <!--end Navbar-->
 
             <!--Authentication-->
-            {{--        <div class="ml-auto">--}}
-            {{--            @if (Route::has('login'))--}}
-            {{--                <div class="text-white">--}}
-            {{--                    @auth--}}
-            {{--                        <a href="{{ url('/dashboard') }}" class="text-white">Dashboard</a>--}}
-            {{--                    @else--}}
-            {{--                        <a href="{{ route('login') }}" class="text-white">Login</a>--}}
+                    <div class="ml-auto">
+                        @if (Route::has('login'))
+                            <div class="text-white">
+                                @auth
+                                    <a href="{{ url('/dashboard') }}" class="text-white">Dashboard</a>
+                                @else
+                                    <a href="{{ route('login') }}" class="text-white">Login</a>
 
-            {{--                        @if (Route::has('register'))--}}
-            {{--                            <a href="{{ route('register') }}" class="ml-4 text-white">Register</a>--}}
-            {{--                        @endif--}}
-            {{--                    @endif--}}
-            {{--                </div>--}}
-            {{--            @endif--}}
-            {{--        </div>--}}
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}" class="ml-4 text-white">Register</a>
+                                    @endif
+                                @endif
+                            </div>
+                        @endif
+                    </div>
 
         </div>
     </nav>
