@@ -1,10 +1,24 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+<style>
+    body, html{
+        background-color: #343A40;
+    }
+    .my-pad{
+        padding-bottom: 200px;
+    }
+    .my-color{
+        background-color: red !important;
+    }
 
-        <div class="card-body">
+</style>
+<div class="bg-dark my-pad">
+    <x-guest-layout>
+        <x-jet-authentication-card>
+            <x-slot name="logo">
+                {{--            <x-jet-authentication-card-logo />--}}
+                <div class="text-danger mb-3 display-4 text-light text-center">
+                    Login
+                </div>
+            </x-slot>
 
             <x-jet-validation-errors class="mb-3 rounded-0" />
 
@@ -16,7 +30,7 @@
 
             <form method="POST" action="{{ route('login') }}">
                 @csrf
-                <div class="form-group">
+                <div class="form-group pt-3">
                     <x-jet-label value="{{ __('Email') }}" />
 
                     <x-jet-input class="{{ $errors->has('email') ? 'is-invalid' : '' }}" type="email"
@@ -44,11 +58,11 @@
 
                 <div class="mb-0">
                     <div class="d-flex justify-content-end align-items-baseline">
-{{--                        @if (Route::has('password.request'))--}}
-{{--                            <a class="text-muted mr-3" href="{{ route('password.request') }}">--}}
-{{--                                {{ __('Forgot your password?') }}--}}
-{{--                            </a>--}}
-{{--                        @endif--}}
+                        {{--                        @if (Route::has('password.request'))--}}
+                        {{--                            <a class="text-muted mr-3" href="{{ route('password.request') }}">--}}
+                        {{--                                {{ __('Forgot your password?') }}--}}
+                        {{--                            </a>--}}
+                        {{--                        @endif--}}
 
                         <x-jet-button>
                             {{ __('Login') }}
@@ -56,6 +70,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-    </x-jet-authentication-card>
-</x-guest-layout>
+        </x-jet-authentication-card>
+    </x-guest-layout>
+</div>

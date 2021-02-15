@@ -25,7 +25,7 @@
         .my-link-hover:hover{
             color: #999999;
         }
-        .nav-font-size{
+        .my-font-size{
             font-size: 1rem;
         }
         body{
@@ -86,7 +86,7 @@ $d_4032 = $points['d_4032'];
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-font-size">
+            <ul class="navbar-nav my-font-size">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="/"><span class="my-link-hover">Home</span> <span class="sr-only">(current)</span></a>
                 </li>
@@ -102,15 +102,19 @@ $d_4032 = $points['d_4032'];
             <!--Authentication-->
                     <div class="ml-auto">
                         @if (Route::has('login'))
-                            <div class="text-white">
+                            <div class="text-white pt-md-0 pt-2">
                                 @auth
-                                    <a href="{{ url('/dashboard') }}" class="text-white">Dashboard</a>
+                                    <a href="{{ url('/dashboard') }}" class="text-white text-decoration-none my-font-size">
+                                        <span class="my-link-hover">Dashboard</span>
+                                    </a>
                                 @else
-                                    <a href="{{ route('login') }}" class="text-white">Login</a>
+{{--                                    <a href="{{ route('login') }}" class="text-white">Login</a>--}}
 
-{{--                                    @if (Route::has('register'))--}}
-{{--                                        <a href="{{ route('register') }}" class="ml-4 text-white">Register</a>--}}
-{{--                                    @endif--}}
+                                    @if (Route::has('register'))
+{{--                                        <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">--}}
+{{--                                            <span class="my-link-hover my-font-size">Register</span>--}}
+{{--                                        </a>--}}
+                                    @endif
                                 @endif
                             </div>
                         @endif
