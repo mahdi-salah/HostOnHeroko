@@ -8,7 +8,9 @@
     <title>RMIG Website</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
 
     <!--icon title-->
@@ -22,13 +24,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
-        .my-link-hover:hover{
+        .my-link-hover:hover {
             color: #999999;
         }
-        .my-font-size{
+
+        .my-font-size {
             font-size: 1rem;
         }
-        body{
+
+        body {
             background-color: #f2f2f2
         }
     </style>
@@ -88,7 +92,8 @@ $d_4032 = $points['d_4032'];
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav my-font-size">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="/"><span class="my-link-hover">Home</span> <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="/"><span class="my-link-hover">Home</span> <span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#"><span class="my-link-hover">Contact us</span></a>
@@ -100,25 +105,43 @@ $d_4032 = $points['d_4032'];
             <!--end Navbar-->
 
             <!--Authentication-->
-                    <div class="ml-auto">
-                        @if (Route::has('login'))
-                            <div class="text-white pt-md-0 pt-2">
-                                @auth
-                                    <a href="{{ url('/dashboard') }}" class="text-white text-decoration-none my-font-size">
-                                        <span class="my-link-hover">Dashboard</span>
-                                    </a>
-                                @else
-{{--                                    <a href="{{ route('login') }}" class="text-white">Login</a>--}}
+            <div class="ml-auto">
+                @if (Route::has('login'))
+                    <div class="text-white pt-md-0 pt-2">
+                        @auth
 
-                                    @if (Route::has('register'))
-{{--                                        <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">--}}
-{{--                                            <span class="my-link-hover my-font-size">Register</span>--}}
-{{--                                        </a>--}}
-                                    @endif
-                                @endif
+                            @if(Auth::user()->name === "admin")
+                                <a href="{{ url('/dashboard') }}" class="text-white text-decoration-none my-font-size">
+                                    <span class="my-link-hover">Dashboard</span>
+                                </a>
+                            @endif
+
+
+                            <!--start Logout-->
+                            <div>
+                                <!-- Authentication -->
+                                <a href="{{ route('logout') }}" class="text-light text-decoration-none my-font-size" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                                    <span class="my-link-hover">{{ __('Logout') }} </span>
+                                </a>
+                                <form method="POST" id="logout-form" action="{{ route('logout') }}">
+                                    @csrf
+                                </form>
                             </div>
+                            <!--end logout-->
+
+                        @else
+{{--                            <a href="{{ route('login') }}" class="text-white">Login</a>--}}
+
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">
+{{--                                    <span class="my-link-hover my-font-size">Register</span>--}}
+                                </a>
+                            @endif
                         @endif
                     </div>
+                @endif
+            </div>
 
         </div>
     </nav>
