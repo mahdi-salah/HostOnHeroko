@@ -8,7 +8,7 @@
         }
         let stop = setInterval(() => {
             loadLink()
-        }, 10000);
+        }, 5000);
     });
 </script>
 
