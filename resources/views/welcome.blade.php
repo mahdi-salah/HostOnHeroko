@@ -118,16 +118,16 @@ $d_4032 = $points['d_4032'];
 
 
                             <!--start Logout-->
-                            <div>
-                                <!-- Authentication -->
-                                <a href="{{ route('logout') }}" class="text-light text-decoration-none my-font-size" onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
-                                    <span class="my-link-hover">{{ __('Logout') }} </span>
-                                </a>
-                                <form method="POST" id="logout-form" action="{{ route('logout') }}">
-                                    @csrf
-                                </form>
-                            </div>
+{{--                            <div>--}}
+{{--                                <!-- Authentication -->--}}
+{{--                                <a href="{{ route('logout') }}" class="text-light text-decoration-none my-font-size" onclick="event.preventDefault();--}}
+{{--                                        document.getElementById('logout-form').submit();">--}}
+{{--                                    <span class="my-link-hover">{{ __('Logout') }} </span>--}}
+{{--                                </a>--}}
+{{--                                <form method="POST" id="logout-form" action="{{ route('logout') }}">--}}
+{{--                                    @csrf--}}
+{{--                                </form>--}}
+{{--                            </div>--}}
                             <!--end logout-->
 
                         @else
