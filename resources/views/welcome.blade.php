@@ -133,11 +133,11 @@ $d_4032 = $points['d_4032'];
                         @else
 {{--                            <a href="{{ route('login') }}" class="text-white">Login</a>--}}
 
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">
-                                    <span class="my-link-hover my-font-size">Register</span>
-                                </a>
-                            @endif
+{{--                            @if (Route::has('register'))--}}
+{{--                                <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">--}}
+{{--                                    <span class="my-link-hover my-font-size">Register</span>--}}
+{{--                                </a>--}}
+{{--                            @endif--}}
                         @endif
                     </div>
                 @endif
