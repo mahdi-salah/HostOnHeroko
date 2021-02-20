@@ -13,7 +13,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
-        'https://rmig.herokuapp.com/login',
-        'https://rmig.herokuapp.com',
+        '/*',
     ];
 }
