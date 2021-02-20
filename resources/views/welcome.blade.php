@@ -32,7 +32,7 @@
             font-size: 1rem;
         }
         .my-title-size {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
 
         body {
@@ -63,7 +63,7 @@ $d_4032 = $points['d_4032'];
 ?>
 
 
-<div class="text-center">
+<div class="mxau">
 
     <!--start Navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-dark">
@@ -92,55 +92,57 @@ $d_4032 = $points['d_4032'];
 {{--                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">--}}
 {{--            <span class="navbar-toggler-icon"></span>--}}
 {{--        </button>--}}
-        <div class="collapse navbar-collapse py-2" id="navbarNav">
-            <ul class="navbar-nav my-font-size">
-                <span class="my-link-hover text-white text-center my-title-size">Rumaila Power Plant Electrecity Production</span>
-{{--                <li class="nav-item active">--}}
-{{--                    <a class="nav-link text-white" href="/"><span class="my-link-hover">Rumaila Power Plant Electrecity Production</span> <span--}}
-{{--                            class="sr-only">(current)</span></a>--}}
-{{--                </li>--}}
-            </ul>
-            <!--end Navbar-->
+        <div class="mx-auto">
+            <div class="collapse navbar-collapse py-2" id="navbarNav">
+                <ul class="navbar-nav my-font-size">
+                    <span class="my-link-hover text-white text-center my-title-size">Rumaila Power Plant Electrecity Production</span>
+                    {{--                <li class="nav-item active">--}}
+                    {{--                    <a class="nav-link text-white" href="/"><span class="my-link-hover">Rumaila Power Plant Electrecity Production</span> <span--}}
+                    {{--                            class="sr-only">(current)</span></a>--}}
+                    {{--                </li>--}}
+                </ul>
+                <!--end Navbar-->
 
-            <!--Authentication-->
-            <div class="ml-auto">
-                @if (Route::has('login'))
-                    <div class="text-white pt-md-0 pt-2">
-                        @auth
+                <!--Authentication-->
+                <div class="ml-auto">
+                    @if (Route::has('login'))
+                        <div class="text-white pt-md-0 pt-2">
+                            @auth
 
-                            @if(Auth::user()->name === "admin")
-                                <a href="{{ url('/dashboard') }}" class="text-white text-decoration-none my-font-size">
-                                    <span class="my-link-hover">Dashboard</span>
-                                </a>
-                            @endif
+                                @if(Auth::user()->name === "admin")
+                                    <a href="{{ url('/dashboard') }}" class="text-white text-decoration-none my-font-size">
+                                        <span class="my-link-hover">Dashboard</span>
+                                    </a>
+                                @endif
 
 
                             <!--start Logout-->
-{{--                            <div>--}}
-{{--                                <!-- Authentication -->--}}
-{{--                                <a href="{{ route('logout') }}" class="text-light text-decoration-none my-font-size" onclick="event.preventDefault();--}}
-{{--                                        document.getElementById('logout-form').submit();">--}}
-{{--                                    <span class="my-link-hover">{{ __('Logout') }} </span>--}}
-{{--                                </a>--}}
-{{--                                <form method="POST" id="logout-form" action="{{ route('logout') }}">--}}
-{{--                                    @csrf--}}
-{{--                                </form>--}}
-{{--                            </div>--}}
+                                {{--                            <div>--}}
+                                {{--                                <!-- Authentication -->--}}
+                                {{--                                <a href="{{ route('logout') }}" class="text-light text-decoration-none my-font-size" onclick="event.preventDefault();--}}
+                                {{--                                        document.getElementById('logout-form').submit();">--}}
+                                {{--                                    <span class="my-link-hover">{{ __('Logout') }} </span>--}}
+                                {{--                                </a>--}}
+                                {{--                                <form method="POST" id="logout-form" action="{{ route('logout') }}">--}}
+                                {{--                                    @csrf--}}
+                                {{--                                </form>--}}
+                                {{--                            </div>--}}
                             <!--end logout-->
 
-                        @else
-{{--                            <a href="{{ route('login') }}" class="text-white">Login</a>--}}
+                            @else
+                                {{--                            <a href="{{ route('login') }}" class="text-white">Login</a>--}}
 
-{{--                            @if (Route::has('register'))--}}
-{{--                                <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">--}}
-{{--                                    <span class="my-link-hover my-font-size">Register</span>--}}
-{{--                                </a>--}}
-{{--                            @endif--}}
-                        @endif
-                    </div>
-                @endif
+                                {{--                            @if (Route::has('register'))--}}
+                                {{--                                <a href="{{ route('register') }}" class="ml-md-4 text-white text-decoration-none">--}}
+                                {{--                                    <span class="my-link-hover my-font-size">Register</span>--}}
+                                {{--                                </a>--}}
+                                {{--                            @endif--}}
+                            @endif
+                        </div>
+                    @endif
+                </div>
+
             </div>
-
         </div>
     </nav>
 
