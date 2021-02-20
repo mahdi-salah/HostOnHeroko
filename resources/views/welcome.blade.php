@@ -89,7 +89,7 @@ $d_4032 = $points['d_4032'];
 
 <!--start Navbar-->
 <div class="bg-dark py-3">
-    <div class="row mx-auto pl-5">
+    <div class="row mx-auto">
         <h1 class="my-link-hover text-white text-center mx-auto">Rumaila Power Plant Electricity Production</h1>
     </div>
 </div>
