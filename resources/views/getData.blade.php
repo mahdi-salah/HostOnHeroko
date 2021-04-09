@@ -14,7 +14,7 @@
 
 <?php
 use Illuminate\Support\Facades\Http;
-$response = Http::get('http://109.224.53.140/vueips.php')->body();
+$response = Http::get('https://gdoco.org/vueips.php')->body();   // http://109.224.53.140/vueips.php
 $data = json_decode($response, true);
 $points = $data['d'];
 

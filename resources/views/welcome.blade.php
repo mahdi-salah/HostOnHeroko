@@ -87,26 +87,6 @@
 <body>
 
 
-<?php
-use Illuminate\Support\Facades\Http;
-$response = Http::get('http://109.224.53.140/vueips.php')->body();
-$data = json_decode($response, true);
-$points = $data['d'];
-
-$d_4041 = $points['d_4041'];
-$d_4042 = $points['d_4042'];
-$d_4043 = $points['d_4043'];
-$d_4044 = $points['d_4044'];
-$d_4045 = $points['d_4045'];
-$d_4046 = $points['d_4046'];
-$d_4047 = $points['d_4047'];
-$d_4048 = $points['d_4048'];
-$d_4049 = $points['d_4049'];
-$d_4032 = $points['d_4032'];
-?>
-
-
-
 <!--start Navbar-->
 <div class="bg-dark py-3 d-flex justify-content-between px-2 items-center">
     <h1 class="my-link-hover text-white">Rumaila Power Plant Electricity Production</h1>
